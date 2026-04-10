@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+dist/
+*.swp
+*.swo
+.DS_Store
+*.local
+google-play-service-account.json
