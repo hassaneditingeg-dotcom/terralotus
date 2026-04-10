@@ -15,6 +15,10 @@ import ProductDetailScreen from '../screens/ProductDetailScreen';
 import SearchScreen from '../screens/SearchScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import QuizScreen from '../screens/QuizScreen';
+import AuthScreen from '../screens/AuthScreen';
+import OrderHistoryScreen from '../screens/OrderHistoryScreen';
+import AddressesScreen from '../screens/AddressesScreen';
+import PreferencesScreen from '../screens/PreferencesScreen';
 
 import { COLORS, FONTS } from '../theme';
 import { useCart } from '../context/CartContext';
@@ -167,6 +171,10 @@ export default function AppNavigator() {
         <Stack.Screen name="ProductDetail" component={ProductDetailScreen} />
         <Stack.Screen name="Search" component={SearchScreen} />
         <Stack.Screen name="ProfileStack" component={ProfileScreen} />
+        <Stack.Screen name="Auth" component={AuthScreen} options={{ presentation: 'modal' }} />
+        <Stack.Screen name="OrderHistory" component={OrderHistoryScreen} />
+        <Stack.Screen name="Addresses" component={AddressesScreen} />
+        <Stack.Screen name="Preferences" component={PreferencesScreen} />
         <Stack.Screen
           name="Quiz"
           component={QuizScreen}

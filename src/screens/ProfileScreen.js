@@ -67,7 +67,7 @@ export default function ProfileScreen({ navigation }) {
             
             <GoldButton
               title="Sign In / Join Now"
-              onPress={() => Alert.alert('Coming Soon', 'Sign in & account creation will be available in a future update.')}
+              onPress={() => navigation.navigate('Auth')}
               style={styles.largeButton}
             />
           </View>
@@ -147,17 +147,17 @@ export default function ProfileScreen({ navigation }) {
         <View style={styles.section}>
           <SectionHeader title="Account" />
           <View style={styles.actionsGrid}>
-            <TouchableOpacity style={styles.actionItem} onPress={() => Alert.alert('Order History', 'Coming soon — your orders will appear here.')}>
+            <TouchableOpacity style={styles.actionItem} onPress={() => navigation.navigate('OrderHistory')}>
               <Feather name="package" size={24} color={COLORS.honeyGold} />
               <Text style={styles.actionText}>Order History</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.actionItem} onPress={() => Alert.alert('Addresses', 'Coming soon — manage your saved addresses here.')}>
+            <TouchableOpacity style={styles.actionItem} onPress={() => navigation.navigate('Addresses')}>
               <Feather name="map-pin" size={24} color={COLORS.honeyGold} />
               <Text style={styles.actionText}>Addresses</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.actionItem} onPress={() => Alert.alert('Preferences', 'Coming soon — customize your experience here.')}>
+            <TouchableOpacity style={styles.actionItem} onPress={() => navigation.navigate('Preferences')}>
               <Feather name="settings" size={24} color={COLORS.honeyGold} />
               <Text style={styles.actionText}>Preferences</Text>
             </TouchableOpacity>
